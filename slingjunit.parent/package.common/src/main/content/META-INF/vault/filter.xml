@@ -24,8 +24,12 @@
   #L%
   -->
 <workspaceFilter version="1.0">
-
+  <filter root="/content/example/assets/jcr:content" />
+  <filter root="/content/example/assets/images" />
+  <filter root="/content/example/pages/jcr:content" />
   <filter root="/content/example/assets/images/Stella.png" />
+  <filter root="/content/example/assets/images/peregrine-logo.png" />
+  <filter root="/content/example/assets/images/logo.png" />
   <filter root="/content/example/templates/base/sub-template" />
   <filter root="/content/example/templates/base/sub-template-container" />
   <filter root="/content/example/pages/contact/jcr:content" />

@@ -179,10 +179,11 @@
             </plugin>
 
             <plugin>
-                <groupId>io.wcm.maven.plugins</groupId>
-                <artifactId>wcmio-content-package-maven-plugin</artifactId>
+                <groupId> org.apache.jackrabbit</groupId>
+                <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
+                    <packageType>mixed</packageType>
                     <userId>${sling.user}</userId>
                     <password>${sling.password}</password>
                     <failOnMissingEmbed>true</failOnMissingEmbed>

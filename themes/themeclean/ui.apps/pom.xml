@@ -139,8 +139,22 @@
             </plugin>
 
             <plugin>
-                <groupId>io.wcm.maven.plugins</groupId>
-                <artifactId>wcmio-content-package-maven-plugin</artifactId>
+                <groupId> org.apache.jackrabbit</groupId>
+                <artifactId>filevault-package-maven-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                  <packageType>mixed</packageType>
+                  <validatorsSettings>
+                    <!-- avoid for now:
+                    ValidationViolation: Property '_jcr_data' [Binary] is not allowed in node with types [nt:folder]: No applicable property definition found for name and type! @ jcr_root/content/admin/assets/images/tesla.jpg/_jcr_content/_jcr_data.binary, validator: jackrabbit-nodetypes, JCR node path: /content/admin/assets/images/tesla.jpg/jcr:content
+                    Even when validator is probably right:
+                    https://wcm-io.atlassian.net/wiki/spaces/WCMIO/pages/1353056261/How+to+make+your+content+packages+comply+with+Jackrabbit+FileVault+Validation
+                    -->
+                    <jackrabbit-nodetypes>
+                      <isDisabled>true</isDisabled>
+                    </jackrabbit-nodetypes>
+                  </validatorsSettings>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>

@@ -67,7 +67,8 @@
         <vault.plugin.version>0.0.10</vault.plugin.version>
         <dependency.plugin.version>3.1.2</dependency.plugin.version>
         <build.helper.plugin.version>3.2.0</build.helper.plugin.version>
-        <vcmio.plugin.version>1.5.0</vcmio.plugin.version>
+        <filevault-package-maven-plugin.version>1.3.2</filevault-package-maven-plugin.version>
+        <wcmio.plugin.version>2.1.6</wcmio.plugin.version>
 
         <!-- plugin versions to use in generated archetypes -->
         <scrplugin.version>1.21.0</scrplugin.version>
@@ -167,10 +168,11 @@
             </plugin>
             <!-- Content Package Plugin -->
             <plugin>
-                <groupId>io.wcm.maven.plugins</groupId>
-                <artifactId>wcmio-content-package-maven-plugin</artifactId>
+                <groupId> org.apache.jackrabbit</groupId>
+                <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
+                    <packageType>mixed</packageType>
                     <!-- AS TODO: Shall we split that into a Package Install for Sling and AEM ? -->
                     <serviceURL>http://${sling.host}:${sling.port}/bin/cpm/</serviceURL>
                     <userId>${sling.user}</userId>
@@ -254,9 +256,14 @@
                 </plugin>
                 <!-- Content Package Plugin -->
                 <plugin>
+                  <groupId>org.apache.jackrabbit</groupId>
+                  <artifactId>filevault-package-maven-plugin</artifactId>
+                  <version>${filevault-package-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
                     <groupId>io.wcm.maven.plugins</groupId>
                     <artifactId>wcmio-content-package-maven-plugin</artifactId>
-                    <version>${vcmio.plugin.version}</version>
+                    <version>${wcmio.plugin.version}</version>
                 </plugin>
                 <!-- Apache Felix Bundle Plugin -->
                 <plugin>

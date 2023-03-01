@@ -39,7 +39,9 @@
     <exclude pattern="/apps/admin/install/.*"/>
   </filter>
   <filter root="/apps/field"/>
-  <filter root="/favicon.ico"/>
+  <filter root="/">
+    <include pattern="/favicon.ico" />
+  </filter>
   <filter root="/live">
     <exclude pattern="/live/.*"/>
   </filter>

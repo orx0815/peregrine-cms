@@ -24,8 +24,10 @@
   #L%
   -->
 <workspaceFilter version="1.0">
-    <filter root="/index.html"/>
-    <filter root="/robots.txt"/>
+    <filter root="/">
+      <include pattern="/index.html"/>
+      <include pattern="/robots.txt"/>
+    </filter>
     <filter root="/content" mode="merge">
       <exclude pattern="/content/.*"/>
     </filter>
