@@ -82,10 +82,13 @@
         <sourceReleaseAssemblyDescriptor>source-release</sourceReleaseAssemblyDescriptor>
 
         <organization.logo>http://www.peregrine-cms.com/peregrine-logo.png</organization.logo>
-        <repositoryName>Peregrine Release Distribution Repository</repositoryName>
-        <repositoryUrl>https://oss.sonatype.org/service/local/staging/deploy/maven2</repositoryUrl>
-        <snapshotRepositoryName>Peregrine CMS Development Snapshot Repository</snapshotRepositoryName>
-        <snapshotRepositoryUrl>https://oss.sonatype.org/content/repositories/snapshots</snapshotRepositoryUrl>
+        
+        <!-- also in themes/themeclean/pom.xml -->
+        <repositoryName>orx0815 Peregrine Release Distribution Repository</repositoryName>
+        <repositoryUrl>https://maven.pkg.github.com/orx0815/peregrine-cms</repositoryUrl>
+        <snapshotRepositoryName>orx0815 Peregrine CMS Development Snapshot Repository</snapshotRepositoryName>
+        <snapshotRepositoryUrl>https://maven.pkg.github.com/orx0815/peregrine-cms</snapshotRepositoryUrl>
+        
         <gpg.useagent>true</gpg.useagent>
 
         <noContent>true</noContent>
@@ -1034,12 +1037,12 @@
 
     <distributionManagement>
         <repository>
-            <id>peregrine.releases.https</id>
+            <id>github</id>
             <name>${repositoryName}</name>
             <url>${repositoryUrl}</url>
         </repository>
         <snapshotRepository>
-            <id>peregrine.snapshots.https</id>
+            <id>github</id>
             <name>${snapshotRepositoryName}</name>
             <url>${snapshotRepositoryUrl}</url>
         </snapshotRepository>
