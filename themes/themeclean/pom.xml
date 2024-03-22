@@ -90,6 +90,12 @@
 
         <!-- define archetype tooling version in a central place -->
         <archetype.version>2.2</archetype.version>
+        
+        <!-- also in root/pom.xml -->
+        <repositoryName>Peregrine orx0815-fork Release Distribution Repository</repositoryName>
+        <repositoryUrl>https://maven.pkg.github.com/orx0815/peregrine-cms</repositoryUrl>
+        <snapshotRepositoryName>Peregrine orx0815-fork CMS Development Snapshot Repository</snapshotRepositoryName>
+        <snapshotRepositoryUrl>https://maven.pkg.github.com/orx0815/peregrine-cms</snapshotRepositoryUrl>
 
     </properties>
 
@@ -436,4 +442,18 @@
     <module>core</module>
     <module>ui.apps</module>
   </modules>
+  
+  <distributionManagement>
+      <repository>
+          <id>github</id>
+          <name>${repositoryName}</name>
+          <url>${repositoryUrl}</url>
+      </repository>
+      <snapshotRepository>
+          <id>github</id>
+          <name>${snapshotRepositoryName}</name>
+          <url>${snapshotRepositoryUrl}</url>
+      </snapshotRepository>
+  </distributionManagement>
+    
 </project>
