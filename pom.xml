@@ -41,32 +41,32 @@
         <slf4j.version>1.7.32</slf4j.version>
 
         <!-- Sling Dependencies Versions -->
-        <org.apache.sling.api.version>2.27.0</org.apache.sling.api.version>
-        <org.apache.sling.jcr.api.version>2.4.0</org.apache.sling.jcr.api.version>
-        <org.apache.sling.jcr.base.version>3.1.6</org.apache.sling.jcr.base.version>
-        <org.apache.sling.commons.mime.version>2.2.2</org.apache.sling.commons.mime.version>
+        <org.apache.sling.api.version>2.27.6</org.apache.sling.api.version>
+        <org.apache.sling.jcr.api.version>2.4.2</org.apache.sling.jcr.api.version>
+        <org.apache.sling.jcr.base.version>3.2.0</org.apache.sling.jcr.base.version>
+        <org.apache.sling.commons.mime.version>2.3.0</org.apache.sling.commons.mime.version>
         <org.apache.sling.settings.version>1.4.2</org.apache.sling.settings.version>
         <org.apache.sling.commons.osgi.version>2.4.2</org.apache.sling.commons.osgi.version>
-        <org.apache.sling.models.api.version>1.3.8</org.apache.sling.models.api.version>
-        <org.apache.sling.engine.version>2.7.4</org.apache.sling.engine.version>
+        <org.apache.sling.models.api.version>1.5.4</org.apache.sling.models.api.version>
+        <org.apache.sling.engine.version>2.16.0</org.apache.sling.engine.version>
         <org.apache.sling.scripting.sightly.compiler.java.version>1.2.2-1.4.0</org.apache.sling.scripting.sightly.compiler.java.version>
         <org.apache.sling.scripting.sightly.runtime.version>1.2.4-1.4.0</org.apache.sling.scripting.sightly.runtime.version>
         <org.apache.sling.servlet-helpers.version>1.4.2</org.apache.sling.servlet-helpers.version>
-        <distribution.api.version>0.4.0</distribution.api.version>
-        <distribution.api.version.latest>0.4.0</distribution.api.version.latest>
-        <org.apache.sling.xss.version>2.2.8</org.apache.sling.xss.version>
+        <distribution.api.version>0.7.0</distribution.api.version>
+        <distribution.api.version.latest>0.7.0</distribution.api.version.latest>
+        <org.apache.sling.xss.version>2.4.2</org.apache.sling.xss.version>
 
         <!-- Third Party Dependencies Versions -->
         <jackrabbit.version>2.19.3</jackrabbit.version>
-        <commons-lang3.version>3.12.0</commons-lang3.version>
-        <commons-io.version>2.11.0</commons-io.version>
+        <commons-lang3.version>3.17.0</commons-lang3.version>
+        <commons-io.version>2.18.0</commons-io.version>
         <commons-collections.version>3.2.2</commons-collections.version>
-        <com.fasterxml.jackson.version>2.13.0</com.fasterxml.jackson.version>
+        <com.fasterxml.jackson.version>2.18.2</com.fasterxml.jackson.version>
         <guava.version>15.0</guava.version>
         <!-- <aws-java-sdk-osgi.version>1.11.181</aws-java-sdk-osgi.version> -->
         <metadata-extractor.version>2.16.0</metadata-extractor.version>
         <xmpcore.version>6.1.11</xmpcore.version>
-        <tika.version>1.27</tika.version>
+        <tika.version>1.28.5</tika.version>
 
         <!-- Tests Dependencies Versions -->
         <junit.version>4.13.2</junit.version>
